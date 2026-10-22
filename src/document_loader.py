@@ -3,7 +3,7 @@ from pathlib import Path
 from pypdf import PdfReader
 
 
-def load_pdf(file_path: str | Path) -> list[dict]:
+def load_pdf(file_path: str | Path, max_pages: int | None = None) -> list[dict]:
     """Extract text from a PDF, preserving its source and page number."""
     path = Path(file_path)
 
@@ -16,7 +16,16 @@ def load_pdf(file_path: str | Path) -> list[dict]:
     reader = PdfReader(str(path))
     documents = []
 
-    for page_number, page in enumerate(reader.pages, start=1):
+    pages = reader.pages
+    if max_pages is not None:
+        if max_pages <= 0:
+            raise ValueError("max_pages must be positive")
+        page_limit = min(len(pages), max_pages)
+        pages_to_iterate = pages[:page_limit]
+    else:
+        pages_to_iterate = pages
+
+    for page_number, page in enumerate(pages_to_iterate, start=1):
         text = (page.extract_text() or "").strip()
 
         if not text:

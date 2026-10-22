@@ -5,9 +5,8 @@ import json
 import sqlite3
 from pathlib import Path
 
-from pypdf import PdfReader
-
 from src.chunker import split_into_chunks
+from src.document_loader import load_pdf
 from src.embeddings import embed_texts
 
 
@@ -72,11 +71,7 @@ def index_pdf(
         )
         connection.commit()
 
-    reader = PdfReader(str(pdf_path))
-    page_limit = len(reader.pages)
-
-    if max_pages is not None:
-        page_limit = min(page_limit, max_pages)
+    page_docs = load_pdf(pdf_path, max_pages=max_pages)
 
     pending_chunks: list[dict] = []
     new_chunks = 0
@@ -122,19 +117,8 @@ def index_pdf(
         )
         pending_chunks.clear()
 
-    for page_number, page in enumerate(reader.pages[:page_limit], start=1):
-        text = (page.extract_text() or "").strip()
-
-        if not text:
-            continue
-
-        page_chunks = split_into_chunks(
-            [{
-                "source": pdf_path.name,
-                "page": page_number,
-                "text": text,
-            }]
-        )
+    for page_doc in page_docs:
+        page_chunks = split_into_chunks([page_doc])
 
         for chunk in page_chunks:
             exists = connection.execute(

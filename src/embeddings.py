@@ -107,7 +107,7 @@ def embed_texts(
     return embeddings
 
 
-def embed_query(query: str) -> list[float]:
+def embed_query(query: str) -> list[float]: #Convierte una pregunta del usuario en un unico vector numerico
     if not query.strip():
         raise ValueError("Query must not be empty")
 
