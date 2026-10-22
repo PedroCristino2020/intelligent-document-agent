@@ -2,4 +2,4 @@ google-genai
 python-dotenv
 pypdf
 numpy
-pytest
+pyteststreamlit
