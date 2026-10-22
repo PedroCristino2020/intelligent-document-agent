@@ -21,3 +21,6 @@ data/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local PDF documents
+documents/*.pdf
