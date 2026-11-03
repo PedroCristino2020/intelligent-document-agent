@@ -14,7 +14,7 @@ DEFAULT_DATABASE_PATH = Path("data") / "index.db"
 def ask_question(
     question: str,
     database_path: Path = DEFAULT_DATABASE_PATH,
-    top_k: int = 5,
+    top_k: int = 3,
 ) -> tuple[str, list[dict]]:
     """Retrieve relevant chunks and generate a grounded answer."""
     if not database_path.is_file():
@@ -65,7 +65,7 @@ def main() -> None:
     parser.add_argument(
         "--top-k",
         type=int,
-        default=5,
+        default=3,
         help="Number of relevant chunks to retrieve.",
     )
     args = parser.parse_args()

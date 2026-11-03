@@ -21,7 +21,7 @@ with st.sidebar:
         "Fragmentos relevantes que recuperar",
         min_value=1,
         max_value=10,
-        value=5,
+        value=3,
     )
     st.caption("Las respuestas se generan con Gemini y RAG.")
 

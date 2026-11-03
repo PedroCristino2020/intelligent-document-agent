@@ -1,0 +1,777 @@
+{
+  "timestamp": "2026-11-02T10:33:43.676081",
+  "config": {
+    "top_k": 5,
+    "database_path": "data\\index.db",
+    "questions_path": "eval\\questions.json",
+    "embedding_model": "gemini-embedding-001",
+    "retrieval_method": "cosine_similarity"
+  },
+  "summary": {
+    "num_questions": 12,
+    "recall_at_k": 1.0,
+    "precision_at_k": 0.35,
+    "hit_at_k": 1.0,
+    "mrr": 0.944444,
+    "map_at_k": 0.944444,
+    "ndcg_at_k": 1.263889
+  },
+  "per_question": [
+    {
+      "question": "¿Qué es un contenedor Docker?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          4,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 4,
+          "chunk_index": 0,
+          "similarity": 0.7722636720938632,
+          "is_relevant": true,
+          "text_preview": "1 Docker\nDockeresunaplataformadecódigoabiertodiseñadaparafacilitarlacreación,implementaciónyejecuciónde\naplicacionesencontenedores.\nUn contenedor se puede definir como un entorno ligero, aislado y por"
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 6,
+          "chunk_index": 0,
+          "similarity": 0.7506269336272713,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\nOpenShift\nDockerEnterpriseEdition\nRancher\nDC/OS\n1.6. Conceptosbásicos\n1.6.1. Dockerfile\nEs unarchivo de configuraciónescrito en texto plano, que contiene todas las instrucciones "
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 0,
+          "similarity": 0.7350459254682504,
+          "is_relevant": false,
+          "text_preview": "Índicegeneral\n1 Docker 1\n1.1 ContenedoresvsMáquinasVirtuales . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1\n1.2 STACKdeContenerización . . . . . . . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7321495010687619,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . 3\n1.6.3 Contenedor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.6.4 DockerRegistry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.72981270197178,
+          "is_relevant": false,
+          "text_preview": "er search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n1.9.2 docker pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n1.9.3 docker i"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué diferencia hay entre una imagen y un contenedor Docker?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          6,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.25,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 6,
+          "chunk_index": 0,
+          "similarity": 0.7528319609495481,
+          "is_relevant": true,
+          "text_preview": "Docker Curso2026/2027\nOpenShift\nDockerEnterpriseEdition\nRancher\nDC/OS\n1.6. Conceptosbásicos\n1.6.1. Dockerfile\nEs unarchivo de configuraciónescrito en texto plano, que contiene todas las instrucciones "
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 4,
+          "chunk_index": 0,
+          "similarity": 0.7259613552142249,
+          "is_relevant": false,
+          "text_preview": "1 Docker\nDockeresunaplataformadecódigoabiertodiseñadaparafacilitarlacreación,implementaciónyejecuciónde\naplicacionesencontenedores.\nUn contenedor se puede definir como un entorno ligero, aislado y por"
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.7251060226423384,
+          "is_relevant": false,
+          "text_preview": "er search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n1.9.2 docker pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n1.9.3 docker i"
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 6,
+          "chunk_index": 1,
+          "similarity": 0.7211696212615653,
+          "is_relevant": true,
+          "text_preview": "imágenesDocker.UnDockerRegistrypuedeserpúblicooprivado.\nDockerHub eselregistrooficialdondeestánalojadoslosrepositoriosdelasimágenesDockerquepodemosuti‑\nlizarennuestroscontenedores.En DockerHub puedene"
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7176041764977774,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . 3\n1.6.3 Contenedor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.6.4 DockerRegistry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        }
+      ]
+    },
+    {
+      "question": "¿Cómo se ejecuta un contenedor Docker en segundo plano?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          11,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 11,
+          "chunk_index": 0,
+          "similarity": 0.7367139204473334,
+          "is_relevant": true,
+          "text_preview": "Docker Curso2026/2027\n1.10. Ciclodevidadeuncontenedor\n1.11. CreacióndecontenedoresenDocker\nParacrearcontenedoresenDockerseutilizaelcomando docker run.\nExistendosformasdecrearuncontenedorenDocker:\ndock"
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 13,
+          "chunk_index": 0,
+          "similarity": 0.729979357397821,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\n1 docker ps -a\n1.12.2. CreacióndeuncontenedorconUbuntu\n1 docker run -it --name ubuntu --rm ubuntu\n1.13. Creacióndecontenedoresenmodo detached\nEnestasecciónvamosaveralgunosejemplo"
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7212037798738763,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . 9\n1.12.2 CreacióndeuncontenedorconUbuntu . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n1.13 Creacióndecontenedoresenmodo detached . . . . . . . . . . . . . . . . . . . . . . ."
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.719216908177345,
+          "is_relevant": false,
+          "text_preview": "er search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n1.9.2 docker pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n1.9.3 docker i"
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 4,
+          "chunk_index": 0,
+          "similarity": 0.7173484182057231,
+          "is_relevant": false,
+          "text_preview": "1 Docker\nDockeresunaplataformadecódigoabiertodiseñadaparafacilitarlacreación,implementaciónyejecuciónde\naplicacionesencontenedores.\nUn contenedor se puede definir como un entorno ligero, aislado y por"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es un Pod de Kubernetes?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          9,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 1,
+          "similarity": 0.7694471060766912,
+          "is_relevant": true,
+          "text_preview": "ycadaunotienesupropiadirecciónIP.\n1.8.1.1. DefinicióndeunPod\nEnesteejemplovamosadefinirunobjetodetipo Podenunarchivollamado mi-pod.yamlconelsiguiente\ncontenido.\n1 apiVersion : v1\n2 kind: Pod\n3 metadat"
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 0,
+          "similarity": 0.7503689407312584,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n1.7.2. Actividad2.2.Creacióndeunclústerconvariosnodoscon kind\nEnestaactividadtendráquecrearunclústerdeKubernetescon kindcontresnodos:\n1ControlPlane.\n2NodosWorkers.\n1.8. Objet"
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 11,
+          "chunk_index": 0,
+          "similarity": 0.7459702843926406,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1.8.1.6. EjecutaruncomandodentrodelcontenedordelPod\nElsiguientecomandoejecutaelcomando /bin/bashdentrodelcontenedordelpod mi-pod.\n1 kubectl exec -it mi-pod -- / bin/bash\n1.8."
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 10,
+          "chunk_index": 0,
+          "similarity": 0.7446888278414469,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n5 labels :\n6 mi-clave : mi-valor\n7 spec :\n8 containers :\n9 - name : mi-contenedor\n10 image : nginx\n11 ports:\n12 - containerPort : 80\n13 restartPolicy : Always\n1.8.1.2. Creaci"
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 11,
+          "chunk_index": 1,
+          "similarity": 0.7390267271066386,
+          "is_relevant": false,
+          "text_preview": "ejecutadoelcomando.\n1 curl http://localhost:8000\nSiqueremoshacerlaredireccióndepuertosaunadirecciónIPquenosealade localhostpodemosutilizar\nelflag --address .\n1 kubectl port-forward mi-pod 8000:80 -- a"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué tipos de contenedores puede incluir un Pod?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          9,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 1,
+          "similarity": 0.7541188890376557,
+          "is_relevant": true,
+          "text_preview": "ycadaunotienesupropiadirecciónIP.\n1.8.1.1. DefinicióndeunPod\nEnesteejemplovamosadefinirunobjetodetipo Podenunarchivollamado mi-pod.yamlconelsiguiente\ncontenido.\n1 apiVersion : v1\n2 kind: Pod\n3 metadat"
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 0,
+          "similarity": 0.7332386487186684,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n1.7.2. Actividad2.2.Creacióndeunclústerconvariosnodoscon kind\nEnestaactividadtendráquecrearunclústerdeKubernetescon kindcontresnodos:\n1ControlPlane.\n2NodosWorkers.\n1.8. Objet"
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 10,
+          "chunk_index": 0,
+          "similarity": 0.7315692350216164,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n5 labels :\n6 mi-clave : mi-valor\n7 spec :\n8 containers :\n9 - name : mi-contenedor\n10 image : nginx\n11 ports:\n12 - containerPort : 80\n13 restartPolicy : Always\n1.8.1.2. Creaci"
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7131119143541216,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . . . . . . . . . . . . . 5\n1.6.4 Actividad1.4.Creacióndeunclústerconvariosnodoscon minikube . . . . . . . . . 5\n1.7 Creacióndeunentornodedesarrollocon kind . . . . . . . . . . . . . . ."
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.7123233663781493,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . . . . . . . . . . 7\n1.8.1.4 ObtenerinformacióndetalladadeunPod . . . . . . . . . . . . . . . . . . . . 7\n1.8.1.5 MostrarloslogsdelcontenedordelPod . . . . . . . . . . . . . . . . . . ."
+        }
+      ]
+    },
+    {
+      "question": "¿Qué recursos forman parte de los objetos de Kubernetes?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          9,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.3333333333333333,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 0,
+          "similarity": 0.7754072273422651,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n1.7.2. Actividad2.2.Creacióndeunclústerconvariosnodoscon kind\nEnestaactividadtendráquecrearunclústerdeKubernetescon kindcontresnodos:\n1ControlPlane.\n2NodosWorkers.\n1.8. Objet"
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7460514781472322,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . . . . . . . . . . . . . 5\n1.6.4 Actividad1.4.Creacióndeunclústerconvariosnodoscon minikube . . . . . . . . . 5\n1.7 Creacióndeunentornodedesarrollocon kind . . . . . . . . . . . . . . ."
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 1,
+          "similarity": 0.7379667297407055,
+          "is_relevant": true,
+          "text_preview": "ycadaunotienesupropiadirecciónIP.\n1.8.1.1. DefinicióndeunPod\nEnesteejemplovamosadefinirunobjetodetipo Podenunarchivollamado mi-pod.yamlconelsiguiente\ncontenido.\n1 apiVersion : v1\n2 kind: Pod\n3 metadat"
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 10,
+          "chunk_index": 0,
+          "similarity": 0.7280897896225578,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n5 labels :\n6 mi-clave : mi-valor\n7 spec :\n8 containers :\n9 - name : mi-contenedor\n10 image : nginx\n11 ports:\n12 - containerPort : 80\n13 restartPolicy : Always\n1.8.1.2. Creaci"
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 11,
+          "chunk_index": 1,
+          "similarity": 0.726696683575657,
+          "is_relevant": false,
+          "text_preview": "ejecutadoelcomando.\n1 curl http://localhost:8000\nSiqueremoshacerlaredireccióndepuertosaunadirecciónIPquenosealade localhostpodemosutilizar\nelflag --address .\n1 kubectl port-forward mi-pod 8000:80 -- a"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué diferencia hay entre los modos de apertura w y a en Python?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          82,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 1,
+          "similarity": 0.7675301387964076,
+          "is_relevant": true,
+          "text_preview": "archivo en modo escritura. Se diferen-\ncia del modo ‘w’ en que en este caso no se sobreescribe el conteni-\ndo del archivo, sino que se comienza a escribir al final del archivo.\n‘b’•\t : binary, binario"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 0,
+          "similarity": 0.7470492335964319,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n82\nArchivos\nLos ficheros en Python son objetos de tipo file creados mediante la \nfunción open (abrir). Esta función toma como parámetros una cadena \ncon la ruta al fichero a abrir, q"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 1,
+          "similarity": 0.705620682599265,
+          "is_relevant": false,
+          "text_preview": "Mientras el primero funciona escribiendo en el archivo una cadena de \ntexto que toma como parámetro, el segundo toma como parámetro una \nlista de cadenas de texto indicando las líneas que queremos esc"
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 0,
+          "similarity": 0.6674522770619048,
+          "is_relevant": false,
+          "text_preview": "Entrada/Salida. Ficheros\n83\nPara la lectura de archivos se utilizan los métodos read, readline y \nrealines.\nEl método read devuelve una cadena con el contenido del archivo o \nbien el contenido de los "
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 1,
+          "chunk_index": 0,
+          "similarity": 0.6570401683850524,
+          "is_relevant": false,
+          "text_preview": "Python\nPARA TODOS\nRaúl González Duque"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué significa el modo b al abrir un archivo en Python?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          82,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 1,
+          "similarity": 0.7716194548296821,
+          "is_relevant": true,
+          "text_preview": "archivo en modo escritura. Se diferen-\ncia del modo ‘w’ en que en este caso no se sobreescribe el conteni-\ndo del archivo, sino que se comienza a escribir al final del archivo.\n‘b’•\t : binary, binario"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 0,
+          "similarity": 0.7544196971147562,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n82\nArchivos\nLos ficheros en Python son objetos de tipo file creados mediante la \nfunción open (abrir). Esta función toma como parámetros una cadena \ncon la ruta al fichero a abrir, q"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 0,
+          "similarity": 0.6942024894023767,
+          "is_relevant": false,
+          "text_preview": "Entrada/Salida. Ficheros\n83\nPara la lectura de archivos se utilizan los métodos read, readline y \nrealines.\nEl método read devuelve una cadena con el contenido del archivo o \nbien el contenido de los "
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 1,
+          "similarity": 0.6896503910670239,
+          "is_relevant": false,
+          "text_preview": "Mientras el primero funciona escribiendo en el archivo una cadena de \ntexto que toma como parámetro, el segundo toma como parámetro una \nlista de cadenas de texto indicando las líneas que queremos esc"
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 84,
+          "chunk_index": 0,
+          "similarity": 0.6833197186129094,
+          "is_relevant": false,
+          "text_preview": "Python para todos\n84\nmero positivo o negativo a utilizar como desplazamiento. También es \nposible utilizar un segundo parámetro para indicar desde dónde quere-\nmos que se haga el desplazamiento: 0 ind"
+        }
+      ]
+    },
+    {
+      "question": "¿Para qué sirve el método close al trabajar con archivos en Python?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          82,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 1,
+          "similarity": 0.7141918313866482,
+          "is_relevant": true,
+          "text_preview": "archivo en modo escritura. Se diferen-\ncia del modo ‘w’ en que en este caso no se sobreescribe el conteni-\ndo del archivo, sino que se comienza a escribir al final del archivo.\n‘b’•\t : binary, binario"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 0,
+          "similarity": 0.6919121887423705,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n82\nArchivos\nLos ficheros en Python son objetos de tipo file creados mediante la \nfunción open (abrir). Esta función toma como parámetros una cadena \ncon la ruta al fichero a abrir, q"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 0,
+          "similarity": 0.6859872694500895,
+          "is_relevant": false,
+          "text_preview": "Entrada/Salida. Ficheros\n83\nPara la lectura de archivos se utilizan los métodos read, readline y \nrealines.\nEl método read devuelve una cadena con el contenido del archivo o \nbien el contenido de los "
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 1,
+          "similarity": 0.6851972888003401,
+          "is_relevant": false,
+          "text_preview": "Mientras el primero funciona escribiendo en el archivo una cadena de \ntexto que toma como parámetro, el segundo toma como parámetro una \nlista de cadenas de texto indicando las líneas que queremos esc"
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 84,
+          "chunk_index": 0,
+          "similarity": 0.6732939752379598,
+          "is_relevant": false,
+          "text_preview": "Python para todos\n84\nmero positivo o negativo a utilizar como desplazamiento. También es \nposible utilizar un segundo parámetro para indicar desde dónde quere-\nmos que se haga el desplazamiento: 0 ind"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué son las necesidades de información en recuperación de información?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          3,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 3,
+          "chunk_index": 2,
+          "similarity": 0.6844956876656431,
+          "is_relevant": true,
+          "text_preview": "also be a smaller corporate repo, or even a set ofweb search\ndocuments used by one person.termrefers to a word in a collection, but it may alsoterm\ninclude phrases. Finally, aqueryrepresents a user’s "
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 3,
+          "chunk_index": 1,
+          "similarity": 0.6659479881124086,
+          "is_relevant": true,
+          "text_preview": "is\noften called asearch engine. Our goal in this section is to give a sufficient overview\nof IR to see its application to large language models meeting user information needs.\nReaders with more intere"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 22,
+          "chunk_index": 3,
+          "similarity": 0.6642875044494417,
+          "is_relevant": false,
+          "text_preview": "questions that drew more on information-\nretrieval was influenced by the rise of the web in the 1990s. The U.S. government-\nsponsored TREC (Text REtrieval Conference) evaluations, run annually since 1"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 1,
+          "chunk_index": 1,
+          "similarity": 0.6560391271727866,
+          "is_relevant": false,
+          "text_preview": "Ultimate Question Of Life, The Universe, and Everything”. 1 And\nbecause so much knowledge is encoded in text, systems were answering questions\nat human-level performance even before LLMs: IBM’s Watson"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 10,
+          "chunk_index": 1,
+          "similarity": 0.6512902954257688,
+          "is_relevant": false,
+          "text_preview": "most to least relevant, and\nthe list (or the firstNdocuments on it) are returned to the user.\n11.2 Evaluation of Information-Retrieval Systems\nWe measure the performance of ranked retrieval systems us"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es la recuperación densa o dense retrieval?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          21,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 21,
+          "chunk_index": 1,
+          "similarity": 0.7564929969892612,
+          "is_relevant": true,
+          "text_preview": "tion need.\n• In sparse retrieval techniques, we represent both the query and the document\nas sparse vectors of the unigram counts of the words they contain, each count\nweighted bytf-idforBM25. Then th"
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 13,
+          "chunk_index": 0,
+          "similarity": 0.7481389499051948,
+          "is_relevant": false,
+          "text_preview": "11.3 • INFORMATIONRETRIEVAL WITHDENSEVECTORS13\nInterpolated Precision Recall Curve\n0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1\n0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1\nRecall\nPrecision\nFigure 11.10An 11 po"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 3,
+          "chunk_index": 3,
+          "similarity": 0.741658578467452,
+          "is_relevant": false,
+          "text_preview": "ies\nand documents: sparse vectors and dense vectors. These two kinds of retrieval differ in the details of the\nindexing and scoring mechanisms.\nThe high-level architecture of an ad hoc retrieval engin"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 14,
+          "chunk_index": 0,
+          "similarity": 0.7411696617070063,
+          "is_relevant": false,
+          "text_preview": "14CHAPTER11 • RETRIEVAL-BASEDMODELS\nrelevant and non-relevant passages.\nQuery Document\n…\n…\n…\n…\n…\n…\n[sep]\ns(q,d)\nzCLS\nU\nQuery\nzCLS_Q zCLS_D\nDocument\n…\n…\n…\n…\n…\n…\n•\ns(q,d)\n(a) (b)\nFigure 11.11Two ways to"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 15,
+          "chunk_index": 0,
+          "similarity": 0.7283181782725475,
+          "is_relevant": false,
+          "text_preview": "11.3 • INFORMATIONRETRIEVAL WITHDENSEVECTORS15\nAnother intermediate approach is theColBERTapproach of Khattab and Za-ColBERT\nharia (2020) and Khattab et al. (2021), shown in Fig. 11.12. This method se"
+        }
+      ]
+    },
+    {
+      "question": "¿Por qué se utilizan sistemas de recuperación de información junto a los modelos de lenguaje?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          2,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 0.3333333333333333,
+      "map_at_k": 0.3333333333333333,
+      "ndcg_at_k": 0.5833333333333333,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 16,
+          "chunk_index": 3,
+          "similarity": 0.7597789771430896,
+          "is_relevant": false,
+          "text_preview": "l email, or health records, or\ncompany-internal documents, or other legal documents. RAG can also help with\nthe problem that knowledge is dynamic and time-sensitive, for example if we know\nthe user’s "
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 18,
+          "chunk_index": 2,
+          "similarity": 0.758386090444792,
+          "is_relevant": false,
+          "text_preview": "sed for in-context learning, for example by using the\ntext as part of a prompt for further questions.\nIn addition to training the LLM, we could train the IR engine. After all, the IR\nengine itself has"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 4,
+          "similarity": 0.754610346479939,
+          "is_relevant": true,
+          "text_preview": "of the problems with\nusing simple prompting to answer questions. First, it helps ensure that the answer is\ngrounded in facts from some curated dataset. And the system can give the user the\nanswer acco"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7504541610441391,
+          "is_relevant": true,
+          "text_preview": "information (like something that\nhappened last week) since they won’t have up-to-date information from after their\nrelease data.\nOne solution to all these problems with simple prompting for generating"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 25,
+          "chunk_index": 1,
+          "similarity": 0.7492515193082713,
+          "is_relevant": false,
+          "text_preview": "emoyer,\nJ. Pineau, and M. Zaheer. 2023. Questions are all you\nneed to train a dense passage retriever.TACL, 11:600–\n616.\nSalton, G. 1971.The SMART Retrieval System: Experiments\nin Automatic Document P"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1911 @@
+{
+  "timestamp": "2026-11-02T10:51:53.351999",
+  "config": {
+    "top_k": 5,
+    "database_path": "data\\index.db",
+    "questions_path": "eval\\questions.json",
+    "embedding_model": "gemini-embedding-001",
+    "retrieval_method": "cosine_similarity"
+  },
+  "summary": {
+    "num_questions": 30,
+    "recall_at_k": 0.933333,
+    "precision_at_k": 0.306667,
+    "hit_at_k": 0.933333,
+    "mrr": 0.813889,
+    "map_at_k": 0.813889,
+    "ndcg_at_k": 1.045556
+  },
+  "per_question": [
+    {
+      "question": "¿Qué es un contenedor Docker?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          4,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 4,
+          "chunk_index": 0,
+          "similarity": 0.7722636720938632,
+          "is_relevant": true,
+          "text_preview": "1 Docker\nDockeresunaplataformadecódigoabiertodiseñadaparafacilitarlacreación,implementaciónyejecuciónde\naplicacionesencontenedores.\nUn contenedor se puede definir como un entorno ligero, aislado y por"
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 6,
+          "chunk_index": 0,
+          "similarity": 0.7506269336272713,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\nOpenShift\nDockerEnterpriseEdition\nRancher\nDC/OS\n1.6. Conceptosbásicos\n1.6.1. Dockerfile\nEs unarchivo de configuraciónescrito en texto plano, que contiene todas las instrucciones "
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 0,
+          "similarity": 0.7350459254682504,
+          "is_relevant": false,
+          "text_preview": "Índicegeneral\n1 Docker 1\n1.1 ContenedoresvsMáquinasVirtuales . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1\n1.2 STACKdeContenerización . . . . . . . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7321495010687619,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . 3\n1.6.3 Contenedor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.6.4 DockerRegistry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.72981270197178,
+          "is_relevant": false,
+          "text_preview": "er search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n1.9.2 docker pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n1.9.3 docker i"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué diferencia hay entre una imagen y un contenedor Docker?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          6,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.25,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 6,
+          "chunk_index": 0,
+          "similarity": 0.7528319609495481,
+          "is_relevant": true,
+          "text_preview": "Docker Curso2026/2027\nOpenShift\nDockerEnterpriseEdition\nRancher\nDC/OS\n1.6. Conceptosbásicos\n1.6.1. Dockerfile\nEs unarchivo de configuraciónescrito en texto plano, que contiene todas las instrucciones "
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 4,
+          "chunk_index": 0,
+          "similarity": 0.7259613552142249,
+          "is_relevant": false,
+          "text_preview": "1 Docker\nDockeresunaplataformadecódigoabiertodiseñadaparafacilitarlacreación,implementaciónyejecuciónde\naplicacionesencontenedores.\nUn contenedor se puede definir como un entorno ligero, aislado y por"
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.7251060226423384,
+          "is_relevant": false,
+          "text_preview": "er search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n1.9.2 docker pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n1.9.3 docker i"
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 6,
+          "chunk_index": 1,
+          "similarity": 0.7211696212615653,
+          "is_relevant": true,
+          "text_preview": "imágenesDocker.UnDockerRegistrypuedeserpúblicooprivado.\nDockerHub eselregistrooficialdondeestánalojadoslosrepositoriosdelasimágenesDockerquepodemosuti‑\nlizarennuestroscontenedores.En DockerHub puedene"
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7176041764977774,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . 3\n1.6.3 Contenedor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.6.4 DockerRegistry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        }
+      ]
+    },
+    {
+      "question": "¿Cómo se ejecuta un contenedor Docker en segundo plano?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          11,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 11,
+          "chunk_index": 0,
+          "similarity": 0.7367139204473334,
+          "is_relevant": true,
+          "text_preview": "Docker Curso2026/2027\n1.10. Ciclodevidadeuncontenedor\n1.11. CreacióndecontenedoresenDocker\nParacrearcontenedoresenDockerseutilizaelcomando docker run.\nExistendosformasdecrearuncontenedorenDocker:\ndock"
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 13,
+          "chunk_index": 0,
+          "similarity": 0.729979357397821,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\n1 docker ps -a\n1.12.2. CreacióndeuncontenedorconUbuntu\n1 docker run -it --name ubuntu --rm ubuntu\n1.13. Creacióndecontenedoresenmodo detached\nEnestasecciónvamosaveralgunosejemplo"
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7212037798738763,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . 9\n1.12.2 CreacióndeuncontenedorconUbuntu . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n1.13 Creacióndecontenedoresenmodo detached . . . . . . . . . . . . . . . . . . . . . . ."
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.719216908177345,
+          "is_relevant": false,
+          "text_preview": "er search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n1.9.2 docker pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n1.9.3 docker i"
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 4,
+          "chunk_index": 0,
+          "similarity": 0.7173484182057231,
+          "is_relevant": false,
+          "text_preview": "1 Docker\nDockeresunaplataformadecódigoabiertodiseñadaparafacilitarlacreación,implementaciónyejecuciónde\naplicacionesencontenedores.\nUn contenedor se puede definir como un entorno ligero, aislado y por"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es un Pod de Kubernetes?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          9,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 1,
+          "similarity": 0.7694471060766912,
+          "is_relevant": true,
+          "text_preview": "ycadaunotienesupropiadirecciónIP.\n1.8.1.1. DefinicióndeunPod\nEnesteejemplovamosadefinirunobjetodetipo Podenunarchivollamado mi-pod.yamlconelsiguiente\ncontenido.\n1 apiVersion : v1\n2 kind: Pod\n3 metadat"
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 0,
+          "similarity": 0.7503689407312584,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n1.7.2. Actividad2.2.Creacióndeunclústerconvariosnodoscon kind\nEnestaactividadtendráquecrearunclústerdeKubernetescon kindcontresnodos:\n1ControlPlane.\n2NodosWorkers.\n1.8. Objet"
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 11,
+          "chunk_index": 0,
+          "similarity": 0.7459702843926406,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1.8.1.6. EjecutaruncomandodentrodelcontenedordelPod\nElsiguientecomandoejecutaelcomando /bin/bashdentrodelcontenedordelpod mi-pod.\n1 kubectl exec -it mi-pod -- / bin/bash\n1.8."
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 10,
+          "chunk_index": 0,
+          "similarity": 0.7446888278414469,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n5 labels :\n6 mi-clave : mi-valor\n7 spec :\n8 containers :\n9 - name : mi-contenedor\n10 image : nginx\n11 ports:\n12 - containerPort : 80\n13 restartPolicy : Always\n1.8.1.2. Creaci"
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 11,
+          "chunk_index": 1,
+          "similarity": 0.7390267271066386,
+          "is_relevant": false,
+          "text_preview": "ejecutadoelcomando.\n1 curl http://localhost:8000\nSiqueremoshacerlaredireccióndepuertosaunadirecciónIPquenosealade localhostpodemosutilizar\nelflag --address .\n1 kubectl port-forward mi-pod 8000:80 -- a"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué tipos de contenedores puede incluir un Pod?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          9,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 1,
+          "similarity": 0.7541188890376557,
+          "is_relevant": true,
+          "text_preview": "ycadaunotienesupropiadirecciónIP.\n1.8.1.1. DefinicióndeunPod\nEnesteejemplovamosadefinirunobjetodetipo Podenunarchivollamado mi-pod.yamlconelsiguiente\ncontenido.\n1 apiVersion : v1\n2 kind: Pod\n3 metadat"
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 0,
+          "similarity": 0.7332386487186684,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n1.7.2. Actividad2.2.Creacióndeunclústerconvariosnodoscon kind\nEnestaactividadtendráquecrearunclústerdeKubernetescon kindcontresnodos:\n1ControlPlane.\n2NodosWorkers.\n1.8. Objet"
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 10,
+          "chunk_index": 0,
+          "similarity": 0.7315692350216164,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n5 labels :\n6 mi-clave : mi-valor\n7 spec :\n8 containers :\n9 - name : mi-contenedor\n10 image : nginx\n11 ports:\n12 - containerPort : 80\n13 restartPolicy : Always\n1.8.1.2. Creaci"
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7131119143541216,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . . . . . . . . . . . . . 5\n1.6.4 Actividad1.4.Creacióndeunclústerconvariosnodoscon minikube . . . . . . . . . 5\n1.7 Creacióndeunentornodedesarrollocon kind . . . . . . . . . . . . . . ."
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.7123233663781493,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . . . . . . . . . . 7\n1.8.1.4 ObtenerinformacióndetalladadeunPod . . . . . . . . . . . . . . . . . . . . 7\n1.8.1.5 MostrarloslogsdelcontenedordelPod . . . . . . . . . . . . . . . . . . ."
+        }
+      ]
+    },
+    {
+      "question": "¿Qué recursos forman parte de los objetos de Kubernetes?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          9,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.3333333333333333,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 0,
+          "similarity": 0.7754072273422651,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n1.7.2. Actividad2.2.Creacióndeunclústerconvariosnodoscon kind\nEnestaactividadtendráquecrearunclústerdeKubernetescon kindcontresnodos:\n1ControlPlane.\n2NodosWorkers.\n1.8. Objet"
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7460514781472322,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . . . . . . . . . . . . . 5\n1.6.4 Actividad1.4.Creacióndeunclústerconvariosnodoscon minikube . . . . . . . . . 5\n1.7 Creacióndeunentornodedesarrollocon kind . . . . . . . . . . . . . . ."
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 1,
+          "similarity": 0.7379667297407055,
+          "is_relevant": true,
+          "text_preview": "ycadaunotienesupropiadirecciónIP.\n1.8.1.1. DefinicióndeunPod\nEnesteejemplovamosadefinirunobjetodetipo Podenunarchivollamado mi-pod.yamlconelsiguiente\ncontenido.\n1 apiVersion : v1\n2 kind: Pod\n3 metadat"
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 10,
+          "chunk_index": 0,
+          "similarity": 0.7280897896225578,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n5 labels :\n6 mi-clave : mi-valor\n7 spec :\n8 containers :\n9 - name : mi-contenedor\n10 image : nginx\n11 ports:\n12 - containerPort : 80\n13 restartPolicy : Always\n1.8.1.2. Creaci"
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 11,
+          "chunk_index": 1,
+          "similarity": 0.726696683575657,
+          "is_relevant": false,
+          "text_preview": "ejecutadoelcomando.\n1 curl http://localhost:8000\nSiqueremoshacerlaredireccióndepuertosaunadirecciónIPquenosealade localhostpodemosutilizar\nelflag --address .\n1 kubectl port-forward mi-pod 8000:80 -- a"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué diferencia hay entre los modos de apertura w y a en Python?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          82,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 1,
+          "similarity": 0.7675301387964076,
+          "is_relevant": true,
+          "text_preview": "archivo en modo escritura. Se diferen-\ncia del modo ‘w’ en que en este caso no se sobreescribe el conteni-\ndo del archivo, sino que se comienza a escribir al final del archivo.\n‘b’•\t : binary, binario"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 0,
+          "similarity": 0.7470492335964319,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n82\nArchivos\nLos ficheros en Python son objetos de tipo file creados mediante la \nfunción open (abrir). Esta función toma como parámetros una cadena \ncon la ruta al fichero a abrir, q"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 1,
+          "similarity": 0.705620682599265,
+          "is_relevant": false,
+          "text_preview": "Mientras el primero funciona escribiendo en el archivo una cadena de \ntexto que toma como parámetro, el segundo toma como parámetro una \nlista de cadenas de texto indicando las líneas que queremos esc"
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 0,
+          "similarity": 0.6674522770619048,
+          "is_relevant": false,
+          "text_preview": "Entrada/Salida. Ficheros\n83\nPara la lectura de archivos se utilizan los métodos read, readline y \nrealines.\nEl método read devuelve una cadena con el contenido del archivo o \nbien el contenido de los "
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 1,
+          "chunk_index": 0,
+          "similarity": 0.6570401683850524,
+          "is_relevant": false,
+          "text_preview": "Python\nPARA TODOS\nRaúl González Duque"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué significa el modo b al abrir un archivo en Python?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          82,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 1,
+          "similarity": 0.7716194548296821,
+          "is_relevant": true,
+          "text_preview": "archivo en modo escritura. Se diferen-\ncia del modo ‘w’ en que en este caso no se sobreescribe el conteni-\ndo del archivo, sino que se comienza a escribir al final del archivo.\n‘b’•\t : binary, binario"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 0,
+          "similarity": 0.7544196971147562,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n82\nArchivos\nLos ficheros en Python son objetos de tipo file creados mediante la \nfunción open (abrir). Esta función toma como parámetros una cadena \ncon la ruta al fichero a abrir, q"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 0,
+          "similarity": 0.6942024894023767,
+          "is_relevant": false,
+          "text_preview": "Entrada/Salida. Ficheros\n83\nPara la lectura de archivos se utilizan los métodos read, readline y \nrealines.\nEl método read devuelve una cadena con el contenido del archivo o \nbien el contenido de los "
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 1,
+          "similarity": 0.6896503910670239,
+          "is_relevant": false,
+          "text_preview": "Mientras el primero funciona escribiendo en el archivo una cadena de \ntexto que toma como parámetro, el segundo toma como parámetro una \nlista de cadenas de texto indicando las líneas que queremos esc"
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 84,
+          "chunk_index": 0,
+          "similarity": 0.6833197186129094,
+          "is_relevant": false,
+          "text_preview": "Python para todos\n84\nmero positivo o negativo a utilizar como desplazamiento. También es \nposible utilizar un segundo parámetro para indicar desde dónde quere-\nmos que se haga el desplazamiento: 0 ind"
+        }
+      ]
+    },
+    {
+      "question": "¿Para qué sirve el método close al trabajar con archivos en Python?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          82,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 1,
+          "similarity": 0.7141918313866482,
+          "is_relevant": true,
+          "text_preview": "archivo en modo escritura. Se diferen-\ncia del modo ‘w’ en que en este caso no se sobreescribe el conteni-\ndo del archivo, sino que se comienza a escribir al final del archivo.\n‘b’•\t : binary, binario"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 0,
+          "similarity": 0.6919121887423705,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n82\nArchivos\nLos ficheros en Python son objetos de tipo file creados mediante la \nfunción open (abrir). Esta función toma como parámetros una cadena \ncon la ruta al fichero a abrir, q"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 0,
+          "similarity": 0.6859872694500895,
+          "is_relevant": false,
+          "text_preview": "Entrada/Salida. Ficheros\n83\nPara la lectura de archivos se utilizan los métodos read, readline y \nrealines.\nEl método read devuelve una cadena con el contenido del archivo o \nbien el contenido de los "
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 1,
+          "similarity": 0.6851972888003401,
+          "is_relevant": false,
+          "text_preview": "Mientras el primero funciona escribiendo en el archivo una cadena de \ntexto que toma como parámetro, el segundo toma como parámetro una \nlista de cadenas de texto indicando las líneas que queremos esc"
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 84,
+          "chunk_index": 0,
+          "similarity": 0.6732939752379598,
+          "is_relevant": false,
+          "text_preview": "Python para todos\n84\nmero positivo o negativo a utilizar como desplazamiento. También es \nposible utilizar un segundo parámetro para indicar desde dónde quere-\nmos que se haga el desplazamiento: 0 ind"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué son las necesidades de información en recuperación de información?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          3,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 3,
+          "chunk_index": 2,
+          "similarity": 0.6844956876656431,
+          "is_relevant": true,
+          "text_preview": "also be a smaller corporate repo, or even a set ofweb search\ndocuments used by one person.termrefers to a word in a collection, but it may alsoterm\ninclude phrases. Finally, aqueryrepresents a user’s "
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 3,
+          "chunk_index": 1,
+          "similarity": 0.6659479881124086,
+          "is_relevant": true,
+          "text_preview": "is\noften called asearch engine. Our goal in this section is to give a sufficient overview\nof IR to see its application to large language models meeting user information needs.\nReaders with more intere"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 22,
+          "chunk_index": 3,
+          "similarity": 0.6642875044494417,
+          "is_relevant": false,
+          "text_preview": "questions that drew more on information-\nretrieval was influenced by the rise of the web in the 1990s. The U.S. government-\nsponsored TREC (Text REtrieval Conference) evaluations, run annually since 1"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 1,
+          "chunk_index": 1,
+          "similarity": 0.6560391271727866,
+          "is_relevant": false,
+          "text_preview": "Ultimate Question Of Life, The Universe, and Everything”. 1 And\nbecause so much knowledge is encoded in text, systems were answering questions\nat human-level performance even before LLMs: IBM’s Watson"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 10,
+          "chunk_index": 1,
+          "similarity": 0.6512902954257688,
+          "is_relevant": false,
+          "text_preview": "most to least relevant, and\nthe list (or the firstNdocuments on it) are returned to the user.\n11.2 Evaluation of Information-Retrieval Systems\nWe measure the performance of ranked retrieval systems us"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es la recuperación densa o dense retrieval?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          21,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 21,
+          "chunk_index": 1,
+          "similarity": 0.7564929969892612,
+          "is_relevant": true,
+          "text_preview": "tion need.\n• In sparse retrieval techniques, we represent both the query and the document\nas sparse vectors of the unigram counts of the words they contain, each count\nweighted bytf-idforBM25. Then th"
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 13,
+          "chunk_index": 0,
+          "similarity": 0.7481389499051948,
+          "is_relevant": false,
+          "text_preview": "11.3 • INFORMATIONRETRIEVAL WITHDENSEVECTORS13\nInterpolated Precision Recall Curve\n0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1\n0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1\nRecall\nPrecision\nFigure 11.10An 11 po"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 3,
+          "chunk_index": 3,
+          "similarity": 0.741658578467452,
+          "is_relevant": false,
+          "text_preview": "ies\nand documents: sparse vectors and dense vectors. These two kinds of retrieval differ in the details of the\nindexing and scoring mechanisms.\nThe high-level architecture of an ad hoc retrieval engin"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 14,
+          "chunk_index": 0,
+          "similarity": 0.7411696617070063,
+          "is_relevant": false,
+          "text_preview": "14CHAPTER11 • RETRIEVAL-BASEDMODELS\nrelevant and non-relevant passages.\nQuery Document\n…\n…\n…\n…\n…\n…\n[sep]\ns(q,d)\nzCLS\nU\nQuery\nzCLS_Q zCLS_D\nDocument\n…\n…\n…\n…\n…\n…\n•\ns(q,d)\n(a) (b)\nFigure 11.11Two ways to"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 15,
+          "chunk_index": 0,
+          "similarity": 0.7283181782725475,
+          "is_relevant": false,
+          "text_preview": "11.3 • INFORMATIONRETRIEVAL WITHDENSEVECTORS15\nAnother intermediate approach is theColBERTapproach of Khattab and Za-ColBERT\nharia (2020) and Khattab et al. (2021), shown in Fig. 11.12. This method se"
+        }
+      ]
+    },
+    {
+      "question": "¿Por qué se utilizan sistemas de recuperación de información junto a los modelos de lenguaje?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          2,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 0.3333333333333333,
+      "map_at_k": 0.3333333333333333,
+      "ndcg_at_k": 0.5833333333333333,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 16,
+          "chunk_index": 3,
+          "similarity": 0.7597789771430896,
+          "is_relevant": false,
+          "text_preview": "l email, or health records, or\ncompany-internal documents, or other legal documents. RAG can also help with\nthe problem that knowledge is dynamic and time-sensitive, for example if we know\nthe user’s "
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 18,
+          "chunk_index": 2,
+          "similarity": 0.758386090444792,
+          "is_relevant": false,
+          "text_preview": "sed for in-context learning, for example by using the\ntext as part of a prompt for further questions.\nIn addition to training the LLM, we could train the IR engine. After all, the IR\nengine itself has"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 4,
+          "similarity": 0.754610346479939,
+          "is_relevant": true,
+          "text_preview": "of the problems with\nusing simple prompting to answer questions. First, it helps ensure that the answer is\ngrounded in facts from some curated dataset. And the system can give the user the\nanswer acco"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7504541610441391,
+          "is_relevant": true,
+          "text_preview": "information (like something that\nhappened last week) since they won’t have up-to-date information from after their\nrelease data.\nOne solution to all these problems with simple prompting for generating"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 25,
+          "chunk_index": 1,
+          "similarity": 0.7492515193082713,
+          "is_relevant": false,
+          "text_preview": "emoyer,\nJ. Pineau, and M. Zaheer. 2023. Questions are all you\nneed to train a dense passage retriever.TACL, 11:600–\n616.\nSalton, G. 1971.The SMART Retrieval System: Experiments\nin Automatic Document P"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es un Dockerfile?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          6,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 0.5,
+      "map_at_k": 0.5,
+      "ndcg_at_k": 0.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 23,
+          "chunk_index": 0,
+          "similarity": 0.7771603537258867,
+          "is_relevant": false,
+          "text_preview": "2 Dockerfile\nEs unarchivo de configuraciónescrito en texto plano, que contiene todas las instrucciones necesarias para\ncrearunaimagenDocker.\n2.1. Instrucciones\nLasinstruccionesmáshabitualesquepodemosu"
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 6,
+          "chunk_index": 0,
+          "similarity": 0.7587655377800763,
+          "is_relevant": true,
+          "text_preview": "Docker Curso2026/2027\nOpenShift\nDockerEnterpriseEdition\nRancher\nDC/OS\n1.6. Conceptosbásicos\n1.6.1. Dockerfile\nEs unarchivo de configuraciónescrito en texto plano, que contiene todas las instrucciones "
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 23,
+          "chunk_index": 1,
+          "similarity": 0.7471675718558708,
+          "is_relevant": false,
+          "text_preview": "gz.\nCOPY:Copiaarchivosodirectoriosdesdelamáquinadondeestamoscreandolaimagenalcontenedor.\nENV:Nospermiteconfigurarvariablesdeentornodentrodelcontenedor.Losvalorespordefectodeestas\nvariablessepuedensobr"
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 24,
+          "chunk_index": 0,
+          "similarity": 0.7396340577215363,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\n• CMD [\"executable \", \"param1\", \"param2\"].Elcomandoseejecutacomounprocesosin\nutilizarelshell( execform).\n• CMD [\"param1\", \"param2\"].Seindicanlosparámetrosquesepasaránal ENTRYPOIN"
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 24,
+          "chunk_index": 1,
+          "similarity": 0.7289094729579473,
+          "is_relevant": false,
+          "text_preview": "shell( execform).\n• ENTRYPOINT command param1 param2.Elcomandoseejecutaenunshell( shellform).\nReferencias:\nDockerfileOverview.\nDockerfilereference.\n2.2. Ejemplos\nLosejemplosquesemuestranacontinuacióne"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué comando se utiliza para crear contenedores en Docker?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          11,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 11,
+          "chunk_index": 0,
+          "similarity": 0.7783797910382972,
+          "is_relevant": true,
+          "text_preview": "Docker Curso2026/2027\n1.10. Ciclodevidadeuncontenedor\n1.11. CreacióndecontenedoresenDocker\nParacrearcontenedoresenDockerseutilizaelcomando docker run.\nExistendosformasdecrearuncontenedorenDocker:\ndock"
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.7510353463601932,
+          "is_relevant": false,
+          "text_preview": "er search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n1.9.2 docker pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n1.9.3 docker i"
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 23,
+          "chunk_index": 1,
+          "similarity": 0.7413345876679621,
+          "is_relevant": false,
+          "text_preview": "gz.\nCOPY:Copiaarchivosodirectoriosdesdelamáquinadondeestamoscreandolaimagenalcontenedor.\nENV:Nospermiteconfigurarvariablesdeentornodentrodelcontenedor.Losvalorespordefectodeestas\nvariablessepuedensobr"
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 12,
+          "chunk_index": 0,
+          "similarity": 0.7397706272307001,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\n1.12.1. CreacióndeuncontenedorconAlpineLinux\nAlpine Linuxes una distribución Linux muy ligera. La imagen deAlpine Linuxpara Docker ocupa menos de 5\nMB.\n1 REPOSITORY TAG IMAGE ID "
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 6,
+          "chunk_index": 0,
+          "similarity": 0.7381740577567709,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\nOpenShift\nDockerEnterpriseEdition\nRancher\nDC/OS\n1.6. Conceptosbásicos\n1.6.1. Dockerfile\nEs unarchivo de configuraciónescrito en texto plano, que contiene todas las instrucciones "
+        }
+      ]
+    },
+    {
+      "question": "¿Qué diferencia hay entre docker run -it y docker run -d?",
+      "relevant_keys": [
+        [
+          "docker-documentation.pdf",
+          11,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "docker-documentation.pdf",
+          "page": 11,
+          "chunk_index": 0,
+          "similarity": 0.7533088579450454,
+          "is_relevant": true,
+          "text_preview": "Docker Curso2026/2027\n1.10. Ciclodevidadeuncontenedor\n1.11. CreacióndecontenedoresenDocker\nParacrearcontenedoresenDockerseutilizaelcomando docker run.\nExistendosformasdecrearuncontenedorenDocker:\ndock"
+        },
+        {
+          "rank": 2,
+          "source": "docker-documentation.pdf",
+          "page": 13,
+          "chunk_index": 0,
+          "similarity": 0.7169668592642214,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\n1 docker ps -a\n1.12.2. CreacióndeuncontenedorconUbuntu\n1 docker run -it --name ubuntu --rm ubuntu\n1.13. Creacióndecontenedoresenmodo detached\nEnestasecciónvamosaveralgunosejemplo"
+        },
+        {
+          "rank": 3,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7063462131905305,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . 9\n1.12.2 CreacióndeuncontenedorconUbuntu . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n1.13 Creacióndecontenedoresenmodo detached . . . . . . . . . . . . . . . . . . . . . . ."
+        },
+        {
+          "rank": 4,
+          "source": "docker-documentation.pdf",
+          "page": 12,
+          "chunk_index": 0,
+          "similarity": 0.7049381898468308,
+          "is_relevant": false,
+          "text_preview": "Docker Curso2026/2027\n1.12.1. CreacióndeuncontenedorconAlpineLinux\nAlpine Linuxes una distribución Linux muy ligera. La imagen deAlpine Linuxpara Docker ocupa menos de 5\nMB.\n1 REPOSITORY TAG IMAGE ID "
+        },
+        {
+          "rank": 5,
+          "source": "docker-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.6998966871881773,
+          "is_relevant": false,
+          "text_preview": "er search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n1.9.2 docker pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n1.9.3 docker i"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es un ReplicaSet en Kubernetes?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          12,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.25,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 12,
+          "chunk_index": 0,
+          "similarity": 0.7942564628893691,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n1 apiVersion : apps/v1\n2 kind: ReplicaSet\n3 metadata :\n4 name : mi-replicaset\n5 spec :\n6 # Número de réplicas que queremos tener en ejecuci ón\n7 replicas : 2\n8 # Selecciona t"
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 13,
+          "chunk_index": 0,
+          "similarity": 0.7625229952909135,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1 kubectl describe replicasets .apps mi-replicaset\n2 kubectl describe replicasets .apps/mi-replicaset\n3\n4 kubectl describe replicasets mi-replicaset\n5 kubectl describe replic"
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 11,
+          "chunk_index": 1,
+          "similarity": 0.745447282257569,
+          "is_relevant": false,
+          "text_preview": "ejecutadoelcomando.\n1 curl http://localhost:8000\nSiqueremoshacerlaredireccióndepuertosaunadirecciónIPquenosealade localhostpodemosutilizar\nelflag --address .\n1 kubectl port-forward mi-pod 8000:80 -- a"
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 12,
+          "chunk_index": 1,
+          "similarity": 0.7282558686022379,
+          "is_relevant": true,
+          "text_preview": "kubectl get replicasets\n3 kubectl get rs\nPodemosutilizarelflag -o wide paraobtenerinformaciónampliada:\n1 kubectl get rs -o wide\nParaobtenerunlistadodetodoslosrecursospodemosutilizarelcomando:\n1 kubect"
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.7247376393460679,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . . . . . . . . . . 7\n1.8.1.4 ObtenerinformacióndetalladadeunPod . . . . . . . . . . . . . . . . . . . . 7\n1.8.1.5 MostrarloslogsdelcontenedordelPod . . . . . . . . . . . . . . . . . . ."
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es un Deployment en Kubernetes?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          15,
+          null
+        ]
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "hit_at_k": 0.0,
+      "mrr": 0.0,
+      "map_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 14,
+          "chunk_index": 0,
+          "similarity": 0.762660011767678,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n18 containers :\n19 - name : mi-contenedor\n20 image : nginx\n21 ports:\n22 - containerPort : 80\n23 restartPolicy : Always\n1.8.3.2. Estrategiadeactualización\nCuandoserealizaunaac"
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 13,
+          "chunk_index": 0,
+          "similarity": 0.7572249089431936,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1 kubectl describe replicasets .apps mi-replicaset\n2 kubectl describe replicasets .apps/mi-replicaset\n3\n4 kubectl describe replicasets mi-replicaset\n5 kubectl describe replic"
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 13,
+          "chunk_index": 1,
+          "similarity": 0.7506395097409299,
+          "is_relevant": false,
+          "text_preview": "Deployment\n1 apiVersion : apps/v1\n2 kind: Deployment\n3 metadata :\n4 name : mi-deployment\n5 spec :\n6 replicas : 2\n7 selector :\n8 matchLabels :\n9 app: mi-app\n10 # Estrategia de actualización: RollingUpd"
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 14,
+          "chunk_index": 1,
+          "similarity": 0.7320313604999045,
+          "is_relevant": false,
+          "text_preview": "apply -f mi-deployment .yaml\n1.8.3.4. ObtenerellistadodeDeployments\nParaobtenerellistadode Deploymentspodemosutilizarcualquierdeestasopciones:\n1 kubectl get deployments .apps\n2 kubectl get deployments"
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 3,
+          "chunk_index": 0,
+          "similarity": 0.7306402703118898,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1.8.3.5 ObtenerinformacióndetalladadeunDeployment . . . . . . . . . . . . . . . 11\n1.8.3.6 MostrarloslogsdelDeployment . . . . . . . . . . . . . . . . . . . . . . . . . 12\n1."
+        }
+      ]
+    },
+    {
+      "question": "¿Cómo se muestran los logs de un Deployment con kubectl?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          15,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 15,
+          "chunk_index": 0,
+          "similarity": 0.7992839048096583,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n4 kubectl describe deployment mi-deployment\n5 kubectl describe deployment /mi-deployment\n6\n7 kubectl describe deploy /mi-deployment\n8 kubectl describe deploy mi-deployment\n1."
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 13,
+          "chunk_index": 0,
+          "similarity": 0.7692639870712497,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1 kubectl describe replicasets .apps mi-replicaset\n2 kubectl describe replicasets .apps/mi-replicaset\n3\n4 kubectl describe replicasets mi-replicaset\n5 kubectl describe replic"
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 3,
+          "chunk_index": 0,
+          "similarity": 0.7574919336390032,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1.8.3.5 ObtenerinformacióndetalladadeunDeployment . . . . . . . . . . . . . . . 11\n1.8.3.6 MostrarloslogsdelDeployment . . . . . . . . . . . . . . . . . . . . . . . . . 12\n1."
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 14,
+          "chunk_index": 1,
+          "similarity": 0.7448583320948221,
+          "is_relevant": false,
+          "text_preview": "apply -f mi-deployment .yaml\n1.8.3.4. ObtenerellistadodeDeployments\nParaobtenerellistadode Deploymentspodemosutilizarcualquierdeestasopciones:\n1 kubectl get deployments .apps\n2 kubectl get deployments"
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 10,
+          "chunk_index": 0,
+          "similarity": 0.7411863401071067,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n5 labels :\n6 mi-clave : mi-valor\n7 spec :\n8 containers :\n9 - name : mi-contenedor\n10 image : nginx\n11 ports:\n12 - containerPort : 80\n13 restartPolicy : Always\n1.8.1.2. Creaci"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es un clúster de Kubernetes creado con kind?",
+      "relevant_keys": [
+        [
+          "kubernetes-documentation.pdf",
+          9,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 0.5,
+      "map_at_k": 0.5,
+      "ndcg_at_k": 0.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "kubernetes-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7467659002042099,
+          "is_relevant": false,
+          "text_preview": ". . . . . . . . . . . . . . . . . . . . 5\n1.6.4 Actividad1.4.Creacióndeunclústerconvariosnodoscon minikube . . . . . . . . . 5\n1.7 Creacióndeunentornodedesarrollocon kind . . . . . . . . . . . . . . ."
+        },
+        {
+          "rank": 2,
+          "source": "kubernetes-documentation.pdf",
+          "page": 9,
+          "chunk_index": 0,
+          "similarity": 0.7336250620583159,
+          "is_relevant": true,
+          "text_preview": "Kubernetes Curso2026/2027\n1.7.2. Actividad2.2.Creacióndeunclústerconvariosnodoscon kind\nEnestaactividadtendráquecrearunclústerdeKubernetescon kindcontresnodos:\n1ControlPlane.\n2NodosWorkers.\n1.8. Objet"
+        },
+        {
+          "rank": 3,
+          "source": "kubernetes-documentation.pdf",
+          "page": 6,
+          "chunk_index": 1,
+          "similarity": 0.7214481335951072,
+          "is_relevant": false,
+          "text_preview": "unclústeren entornosdedesarrolloo entornoscon\nrecursoslimitados.Algunassolucionesson:\nMinikube\nKind\nK3s\nMicroK8s\n1.6. CreacióndeunentornodedesarrolloconMinikube\n1.6.1. Actividad1.1.Instalaciónde minik"
+        },
+        {
+          "rank": 4,
+          "source": "kubernetes-documentation.pdf",
+          "page": 6,
+          "chunk_index": 0,
+          "similarity": 0.7171903904646234,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1.4. ¿CómopuedocrearunclústerdeKubernetesenunentornode\nproducción?\nParacrearunclústerdeKubernetesexistendiferentessoluciones:\n1. UtilizarKubernetescomoservicioenunproveedorde"
+        },
+        {
+          "rank": 5,
+          "source": "kubernetes-documentation.pdf",
+          "page": 8,
+          "chunk_index": 0,
+          "similarity": 0.7111400850352069,
+          "is_relevant": false,
+          "text_preview": "Kubernetes Curso2026/2027\n1 minikube profile list\nParaeliminarelclústerpodemosutilizarelcomando:\n1 minikube delete\nAnexo\nAcontinuación,semuestraunejemplocómosepodríaelclústerdeKubernetesconotrosdriver"
+        }
+      ]
+    },
+    {
+      "question": "¿Para qué se utiliza la función open() al trabajar con archivos en Python?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          82,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 0,
+          "similarity": 0.7673320011534126,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n82\nArchivos\nLos ficheros en Python son objetos de tipo file creados mediante la \nfunción open (abrir). Esta función toma como parámetros una cadena \ncon la ruta al fichero a abrir, q"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 82,
+          "chunk_index": 1,
+          "similarity": 0.7351867372049328,
+          "is_relevant": true,
+          "text_preview": "archivo en modo escritura. Se diferen-\ncia del modo ‘w’ en que en este caso no se sobreescribe el conteni-\ndo del archivo, sino que se comienza a escribir al final del archivo.\n‘b’•\t : binary, binario"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 0,
+          "similarity": 0.70204472260798,
+          "is_relevant": false,
+          "text_preview": "Entrada/Salida. Ficheros\n83\nPara la lectura de archivos se utilizan los métodos read, readline y \nrealines.\nEl método read devuelve una cadena con el contenido del archivo o \nbien el contenido de los "
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 83,
+          "chunk_index": 1,
+          "similarity": 0.6892900349856875,
+          "is_relevant": false,
+          "text_preview": "Mientras el primero funciona escribiendo en el archivo una cadena de \ntexto que toma como parámetro, el segundo toma como parámetro una \nlista de cadenas de texto indicando las líneas que queremos esc"
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 10,
+          "chunk_index": 1,
+          "similarity": 0.6736155675320875,
+          "is_relevant": false,
+          "text_preview": "una respuesta del intérprete para \ncada línea (sesión interactiva) o bien podemos escribir el código de un \nprograma en un archivo de texto y ejecutarlo.\nA la hora de realizar una sesión interactiva o"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué módulo de Python se utiliza para trabajar con expresiones regulares?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          90,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 0.3333333333333333,
+      "map_at_k": 0.3333333333333333,
+      "ndcg_at_k": 0.3333333333333333,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 85,
+          "chunk_index": 0,
+          "similarity": 0.7937292421845904,
+          "is_relevant": false,
+          "text_preview": "85\nexpresiones \nregulares\nLas expresiones regulares, también llamadas regex o regexp, consisten \nen patrones que describen conjuntos de cadenas de caracteres.\nAlgo parecido sería escribir en la línea "
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 89,
+          "chunk_index": 0,
+          "similarity": 0.757343378658757,
+          "is_relevant": false,
+          "text_preview": "Expresiones regulares\n89\n{,8} de 0 a 8 veces y {3,} tres veces o mas (las que sean).\nOtro elemento interesante en las expresiones regulares, para terminar, \nes la especificación de las posiciones en q"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 90,
+          "chunk_index": 1,
+          "similarity": 0.7395005552525504,
+          "is_relevant": true,
+          "text_preview": "rimer carácter de la cadena, mientras que con search \nbuscamos cualquier parte de la cadena que se ajuste al patrón. Por esta \nrazón el método start de un objeto MatchObject obtenido mediante la \nfunc"
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 86,
+          "chunk_index": 0,
+          "similarity": 0.7384535571561779,
+          "is_relevant": false,
+          "text_preview": "Python para todos\n86\ndescribe un conjunto compuesto tan solo por esa misma cadena. Por \nejemplo, veamos cómo la cadena “python” coincide con la expresión \nregular “python” usando la función match:\nimp"
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 89,
+          "chunk_index": 1,
+          "similarity": 0.7363850072566986,
+          "is_relevant": false,
+          "text_preview": "obar y existe un tercer parámetro opcional que con-\ntiene distintos flags que se pueden utilizar para modificar el comporta-\nmiento de las expresiones regulares.\nAlgunos ejemplos de flags del módulo r"
+        }
+      ]
+    },
+    {
+      "question": "¿Para qué sirve el método group() con expresiones regulares?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          90,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 90,
+          "chunk_index": 0,
+          "similarity": 0.7729124037954725,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n90\n>>> mo = re.match(“http://.+\\net”, “http://mundogeek.net”)\n>>> print mo.group()\nhttp://mundogeek.net\nPodríamos crear grupos utilizando los paréntesis, como aprendimos \nen la secci"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 89,
+          "chunk_index": 1,
+          "similarity": 0.7601909239157544,
+          "is_relevant": false,
+          "text_preview": "obar y existe un tercer parámetro opcional que con-\ntiene distintos flags que se pueden utilizar para modificar el comporta-\nmiento de las expresiones regulares.\nAlgunos ejemplos de flags del módulo r"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 89,
+          "chunk_index": 2,
+          "similarity": 0.7564847096393467,
+          "is_relevant": false,
+          "text_preview": "os se nos devuelve el grupo 0 \nde la cadena reconocida. El grupo 0 es la subcadena reconocida por \nla expresión regular al completo, aunque no existan paréntesis que \ndelimiten el grupo."
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 86,
+          "chunk_index": 1,
+          "similarity": 0.7444158627818029,
+          "is_relevant": false,
+          "text_preview": "tendríamos que escaparlo utilizando la barra invertida.\nPara comprobar si la cadena consiste en 3 caracteres seguidos de un \npunto, por ejemplo, podríamos utilizar lo siguiente:\nre.match(“...\\.”, “abc"
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 85,
+          "chunk_index": 1,
+          "similarity": 0.6984798438097842,
+          "is_relevant": false,
+          "text_preview": "escrito mediante un patrón (match), dividir la cadena usando \nlas ocurrencias del patrón como puntos de ruptura (split) o para sus-\ntituir todas las ocurrencias del patrón por otra cadena (sub). Verem"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué tipo de error IntegrityError representa en Python?",
+      "relevant_keys": [
+        [
+          "python-documentation.pdf",
+          120,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "python-documentation.pdf",
+          "page": 120,
+          "chunk_index": 0,
+          "similarity": 0.7263687480871492,
+          "is_relevant": true,
+          "text_preview": "Python para todos\n120\nOperationalError•\t : Errores relacionados con el funcionamiento de \nla base de datos, como una desconexión inesperada.\nIntegrityError•\t : Errores relacionados con la integridad r"
+        },
+        {
+          "rank": 2,
+          "source": "python-documentation.pdf",
+          "page": 69,
+          "chunk_index": 1,
+          "similarity": 0.6928269669223888,
+          "is_relevant": false,
+          "text_preview": "stá asociado a ninguna \nvariable.\nReferenceError(StandardError): El objeto no tiene ninguna referen-\ncia fuerte apuntando hacia él.\nRuntimeError(StandardError): Error en tiempo de ejecución no espe-\nc"
+        },
+        {
+          "rank": 3,
+          "source": "python-documentation.pdf",
+          "page": 70,
+          "chunk_index": 0,
+          "similarity": 0.6894960459979576,
+          "is_relevant": false,
+          "text_preview": "Python para todos\n70\nIndentationError(SyntaxError): Error en la indentación del archivo.\nTabError(IndentationError): Error debido a la mezcla de espacios y \ntabuladores.\nSystemError(StandardError): Er"
+        },
+        {
+          "rank": 4,
+          "source": "python-documentation.pdf",
+          "page": 69,
+          "chunk_index": 0,
+          "similarity": 0.6856356861361057,
+          "is_relevant": false,
+          "text_preview": "Excepciones\n69\nEOFError(StandardError): Se intentó leer más allá del final de fichero.\nEnvironmentError(StandardError): Clase padre de los errores relacio-\nnados con la entrada/salida.\nIOError(Environ"
+        },
+        {
+          "rank": 5,
+          "source": "python-documentation.pdf",
+          "page": 119,
+          "chunk_index": 1,
+          "similarity": 0.6845036804342951,
+          "is_relevant": false,
+          "text_preview": "|__NotSupportedError\nStandardError•\t : Super clase para todas las excepciones de DB API.\nWarning•\t : Excepción que se lanza para avisos importantes.\nError•\t : Super clase de los errores.\nInterfaceErro"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es retrieval-augmented generation o RAG?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          2,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 0.25,
+      "map_at_k": 0.25,
+      "ndcg_at_k": 0.25,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 1,
+          "similarity": 0.8050896716193771,
+          "is_relevant": false,
+          "text_preview": "e-\nries of passages about The Magic Flute.\nThe idea of retrieval-augmented generation is to condition on the retrieved pas-\nsages, jointly with some prompt text, for example like “Based on these texts"
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 16,
+          "chunk_index": 3,
+          "similarity": 0.8034090321318612,
+          "is_relevant": false,
+          "text_preview": "l email, or health records, or\ncompany-internal documents, or other legal documents. RAG can also help with\nthe problem that knowledge is dynamic and time-sensitive, for example if we know\nthe user’s "
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 0,
+          "similarity": 0.7965650443131155,
+          "is_relevant": false,
+          "text_preview": "11.4 • RETRIEVAL-AUGMENTEDGENERATION(RAG)17\nWhen was\nthe premiere of\nThe Magic Flute?\nRelevant\nDocs\n1791, according \nto this page\nRetriever\nIndexed Docs\nLLM\nGenerator\nCorpus of\nDocuments\nUser prompt:\n"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7930750960936048,
+          "is_relevant": true,
+          "text_preview": "information (like something that\nhappened last week) since they won’t have up-to-date information from after their\nrelease data.\nOne solution to all these problems with simple prompting for generating"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 2,
+          "similarity": 0.7821787282587638,
+          "is_relevant": false,
+          "text_preview": "er the following question... ;q;x <i)\nThere are many augmentations of this basic RAG paradigm. One addition is\nthe use ofagent-based RAG. In the RAG paradigm described so far, a search is\nalways run a"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué dos componentes principales forman un sistema RAG?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          16,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 16,
+          "chunk_index": 3,
+          "similarity": 0.6999944555446886,
+          "is_relevant": true,
+          "text_preview": "l email, or health records, or\ncompany-internal documents, or other legal documents. RAG can also help with\nthe problem that knowledge is dynamic and time-sensitive, for example if we know\nthe user’s "
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 1,
+          "similarity": 0.6863435644461678,
+          "is_relevant": false,
+          "text_preview": "e-\nries of passages about The Magic Flute.\nThe idea of retrieval-augmented generation is to condition on the retrieved pas-\nsages, jointly with some prompt text, for example like “Based on these texts"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 2,
+          "similarity": 0.6819344560055027,
+          "is_relevant": false,
+          "text_preview": "er the following question... ;q;x <i)\nThere are many augmentations of this basic RAG paradigm. One addition is\nthe use ofagent-based RAG. In the RAG paradigm described so far, a search is\nalways run a"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 18,
+          "chunk_index": 0,
+          "similarity": 0.662898777191059,
+          "is_relevant": false,
+          "text_preview": "18CHAPTER11 • RETRIEVAL-BASEDMODELS\nturn. Or we may want to retrieve from different collections for different user needs\n(sometimes the web, other times a private collection). Inagent-based RAG, the\ns"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 18,
+          "chunk_index": 2,
+          "similarity": 0.6599297583674202,
+          "is_relevant": false,
+          "text_preview": "sed for in-context learning, for example by using the\ntext as part of a prompt for further questions.\nIn addition to training the LLM, we could train the IR engine. After all, the IR\nengine itself has"
+        }
+      ]
+    },
+    {
+      "question": "¿Por qué los LLMs pueden tener conocimiento desactualizado?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          2,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.8,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 2.083333333333333,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.7770388635233132,
+          "is_relevant": true,
+          "text_preview": "ting a large language model to answer from its pretrained pa-\nrameters doesn’t allow us to ask questions about proprietary data. We would like to\nuse language models to help with user information need"
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 1,
+          "similarity": 0.7540118313230616,
+          "is_relevant": true,
+          "text_preview": "etimes give incorrect factual responses\neven when the correct facts are stored in the parameters; this seems to be caused\nby the feedforward layers failing to recall the knowledge stored in their para"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 0,
+          "similarity": 0.752346538941211,
+          "is_relevant": true,
+          "text_preview": "2CHAPTER11 • RETRIEVAL-BASEDMODELS\nSimply prompting an LLM is useful for many generation tasks, including those\ninvolving facts. But the fact that knowledge is stored in the feedforward weights of\nthe"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7329316226573047,
+          "is_relevant": true,
+          "text_preview": "information (like something that\nhappened last week) since they won’t have up-to-date information from after their\nrelease data.\nOne solution to all these problems with simple prompting for generating"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 1,
+          "chunk_index": 2,
+          "similarity": 0.7181319324703621,
+          "is_relevant": false,
+          "text_preview": "information needs, for examplefactoid questionsthatfactoidquestions\ncan be met with facts expressed in short texts like the following:\n(11.1) Where is the Louvre Museum located?\n(11.2) Where does the "
+        }
+      ]
+    },
+    {
+      "question": "¿Qué ventaja aporta RAG para responder con datos propios o documentos internos?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          2,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.4,
+      "hit_at_k": 1.0,
+      "mrr": 0.5,
+      "map_at_k": 0.5,
+      "ndcg_at_k": 0.8333333333333333,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 16,
+          "chunk_index": 3,
+          "similarity": 0.7610218022865174,
+          "is_relevant": false,
+          "text_preview": "l email, or health records, or\ncompany-internal documents, or other legal documents. RAG can also help with\nthe problem that knowledge is dynamic and time-sensitive, for example if we know\nthe user’s "
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7599870164023113,
+          "is_relevant": true,
+          "text_preview": "information (like something that\nhappened last week) since they won’t have up-to-date information from after their\nrelease data.\nOne solution to all these problems with simple prompting for generating"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 4,
+          "similarity": 0.7411480779477644,
+          "is_relevant": true,
+          "text_preview": "of the problems with\nusing simple prompting to answer questions. First, it helps ensure that the answer is\ngrounded in facts from some curated dataset. And the system can give the user the\nanswer acco"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 2,
+          "similarity": 0.7296185547288527,
+          "is_relevant": false,
+          "text_preview": "er the following question... ;q;x <i)\nThere are many augmentations of this basic RAG paradigm. One addition is\nthe use ofagent-based RAG. In the RAG paradigm described so far, a search is\nalways run a"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 1,
+          "similarity": 0.7266827657370417,
+          "is_relevant": false,
+          "text_preview": "e-\nries of passages about The Magic Flute.\nThe idea of retrieval-augmented generation is to condition on the retrieved pas-\nsages, jointly with some prompt text, for example like “Based on these texts"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué es ColBERT en el contexto de recuperación con vectores densos?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          13,
+          null
+        ]
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "hit_at_k": 0.0,
+      "mrr": 0.0,
+      "map_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 15,
+          "chunk_index": 0,
+          "similarity": 0.7887008880237658,
+          "is_relevant": false,
+          "text_preview": "11.3 • INFORMATIONRETRIEVAL WITHDENSEVECTORS15\nAnother intermediate approach is theColBERTapproach of Khattab and Za-ColBERT\nharia (2020) and Khattab et al. (2021), shown in Fig. 11.12. This method se"
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 15,
+          "chunk_index": 2,
+          "similarity": 0.7654328111658273,
+          "is_relevant": false,
+          "text_preview": "m], is processed similarly, including a[CLS]and\nspecial[D]token. A linear layer is applied on top ofdandqto control the output\ndimension, so as to keep the vectors small for storage efficiency, and ve"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 15,
+          "chunk_index": 1,
+          "similarity": 0.7432206089984532,
+          "is_relevant": false,
+          "text_preview": "…\n…\n…\ns(q,d)\nMaxSim MaxSim MaxSim\n∑\nnorm norm norm normnormnorm\nFigure 11.12A sketch of the ColBERT algorithm at inference time. The query and doc-\nument are first passed through separate BERT encoder"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 21,
+          "chunk_index": 1,
+          "similarity": 0.7193462434622835,
+          "is_relevant": false,
+          "text_preview": "tion need.\n• In sparse retrieval techniques, we represent both the query and the document\nas sparse vectors of the unigram counts of the words they contain, each count\nweighted bytf-idforBM25. Then th"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 3,
+          "chunk_index": 3,
+          "similarity": 0.7121822981584401,
+          "is_relevant": false,
+          "text_preview": "ies\nand documents: sparse vectors and dense vectors. These two kinds of retrieval differ in the details of the\nindexing and scoring mechanisms.\nThe high-level architecture of an ad hoc retrieval engin"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué diferencia hay entre recuperar documentos y usar recuperación aumentada para generar respuestas?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          16,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 16,
+          "chunk_index": 3,
+          "similarity": 0.7312402578254384,
+          "is_relevant": true,
+          "text_preview": "l email, or health records, or\ncompany-internal documents, or other legal documents. RAG can also help with\nthe problem that knowledge is dynamic and time-sensitive, for example if we know\nthe user’s "
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7276726996584676,
+          "is_relevant": false,
+          "text_preview": "information (like something that\nhappened last week) since they won’t have up-to-date information from after their\nrelease data.\nOne solution to all these problems with simple prompting for generating"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 2,
+          "similarity": 0.7205293636817,
+          "is_relevant": false,
+          "text_preview": "er the following question... ;q;x <i)\nThere are many augmentations of this basic RAG paradigm. One addition is\nthe use ofagent-based RAG. In the RAG paradigm described so far, a search is\nalways run a"
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 17,
+          "chunk_index": 0,
+          "similarity": 0.7170090518178873,
+          "is_relevant": false,
+          "text_preview": "11.4 • RETRIEVAL-AUGMENTEDGENERATION(RAG)17\nWhen was\nthe premiere of\nThe Magic Flute?\nRelevant\nDocs\n1791, according \nto this page\nRetriever\nIndexed Docs\nLLM\nGenerator\nCorpus of\nDocuments\nUser prompt:\n"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 21,
+          "chunk_index": 0,
+          "similarity": 0.7126591725513323,
+          "is_relevant": false,
+          "text_preview": "11.7 • SUMMARY21\n11.7 Summary\nThis chapter introduced the tasks ofinformation retrievaland the use ofretrieval\naugmented generation(RAG) to use retrieved passages to improvequestion an-\nsweringand oth"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué problema resuelve dar documentos externos a un modelo de lenguaje al generar respuestas?",
+      "relevant_keys": [
+        [
+          "rag-documentation.pdf",
+          2,
+          null
+        ]
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.8,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "map_at_k": 1.0,
+      "ndcg_at_k": 1.95,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 3,
+          "similarity": 0.7860343617021779,
+          "is_relevant": true,
+          "text_preview": "information (like something that\nhappened last week) since they won’t have up-to-date information from after their\nrelease data.\nOne solution to all these problems with simple prompting for generating"
+        },
+        {
+          "rank": 2,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 4,
+          "similarity": 0.766962167689122,
+          "is_relevant": true,
+          "text_preview": "of the problems with\nusing simple prompting to answer questions. First, it helps ensure that the answer is\ngrounded in facts from some curated dataset. And the system can give the user the\nanswer acco"
+        },
+        {
+          "rank": 3,
+          "source": "rag-documentation.pdf",
+          "page": 16,
+          "chunk_index": 3,
+          "similarity": 0.7561904537967982,
+          "is_relevant": false,
+          "text_preview": "l email, or health records, or\ncompany-internal documents, or other legal documents. RAG can also help with\nthe problem that knowledge is dynamic and time-sensitive, for example if we know\nthe user’s "
+        },
+        {
+          "rank": 4,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 2,
+          "similarity": 0.7493683037320518,
+          "is_relevant": true,
+          "text_preview": "ting a large language model to answer from its pretrained pa-\nrameters doesn’t allow us to ask questions about proprietary data. We would like to\nuse language models to help with user information need"
+        },
+        {
+          "rank": 5,
+          "source": "rag-documentation.pdf",
+          "page": 2,
+          "chunk_index": 0,
+          "similarity": 0.7399879024951054,
+          "is_relevant": true,
+          "text_preview": "2CHAPTER11 • RETRIEVAL-BASEDMODELS\nSimply prompting an LLM is useful for many generation tasks, including those\ninvolving facts. But the fact that knowledge is stored in the feedforward weights of\nthe"
+        }
+      ]
+    }
+  ]
+}

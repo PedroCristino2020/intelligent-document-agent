@@ -2,4 +2,6 @@ google-genai
 python-dotenv
 pypdf
 numpy
-pyteststreamlit
+pytest
+streamlit
+rank_bm25
