@@ -3,6 +3,7 @@ import sqlite3
 from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
+from fastapi.responses import StreamingResponse
 
 from api.schemas import (
     AskRequest,
@@ -12,6 +13,7 @@ from api.schemas import (
     SearchResult,
 )
 from src.ask import DEFAULT_DATABASE_PATH, ask_question
+from src.llm import answer_question_stream
 from src.retriever import retrieve
 
 router = APIRouter(tags=["Pregunta-Respuesta"])
@@ -62,6 +64,27 @@ def ask(req: AskRequest):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error al generar respuesta: {e}")
+
+@router.post("/ask/stream")
+def ask_stream(req: AskRequest):
+    try:
+        chunks, embeddings = _load_index()
+        results = retrieve(req.question, chunks, embeddings, top_k=req.top_k)
+
+        def event_generator():
+            try:
+                for token in answer_question_stream(req.question, results):
+                    yield token
+            except Exception as e:
+                yield f"\n\n[ERROR] {str(e)}"
+
+        return StreamingResponse(event_generator(), media_type="text/plain; charset=utf-8")
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_tag=500, detail=f"Error al generar respuesta: {e}")
 
 
 @router.post("/search", response_model=SearchResponse)
