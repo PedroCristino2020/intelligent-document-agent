@@ -1,51 +1,57 @@
-
-import numpy as np
+import json
+import math
+import os
+from pathlib import Path
 
 from src.embeddings import embed_query
 
 
-def retrieve( #Recibe la pregunta del usuario, compara su embedding con los de los fragmentos de los PDF y devuelve los top_k mas relevantes, ordenados por similitud semantica
+def cosine_similarity(vec1: list[float], vec2: list[float]) -> float:
+    if len(vec1) != len(vec2):
+        raise ValueError("Vectors must have the same length")
+
+    dot_product = sum(a * b for a, b in zip(vec1, vec2))
+    norm1 = math.sqrt(sum(a * a for a in vec1))
+    norm2 = math.sqrt(sum(b * b for b in vec2))
+
+    if norm1 == 0 or norm2 == 0:
+        return 0.0
+
+    return dot_product / (norm1 * norm2)
+
+
+def retrieve(
     query: str,
     chunks: list[dict],
     embeddings: list[list[float]],
-    top_k: int = 5,
+    top_k: int = 3,
 ) -> list[dict]:
-    """Return the most relevant chunks using cosine similarity."""
-    if top_k <= 0:
-        raise ValueError("top_k must be positive")
-
-    if len(chunks) != len(embeddings):
-        raise ValueError("Each chunk must have one embedding")
-
-    if not chunks:
+    if not chunks or not embeddings:
         return []
 
-    query_vector = np.asarray(embed_query(query), dtype=float) #Los convierte a arrays de NumPy
-    document_vectors = np.asarray(embeddings, dtype=float)
+    if len(chunks) != len(embeddings):
+        raise ValueError("Chunks and embeddings must have the same length")
 
-    if document_vectors.ndim != 2: #Comprueba que forman una matriz
-        raise ValueError("Embeddings must be a two-dimensional array")
+    query_embedding = embed_query(query)
+    similarities = [
+        cosine_similarity(query_embedding, chunk_embedding)
+        for chunk_embedding in embeddings
+    ]
 
-    if document_vectors.shape[1] != query_vector.shape[0]:
-        raise ValueError("Query and document embeddings have different sizes")
-
-    query_norm = np.linalg.norm(query_vector) #Calcula las normas de los vectores
-    document_norms = np.linalg.norm(document_vectors, axis=1)
-
-    if query_norm == 0 or np.any(document_norms == 0):
-        raise ValueError("Embeddings must not be zero vectors")
-
-    similarities = ( #Coseno del angulo
-        document_vectors @ query_vector
-    ) / (document_norms * query_norm)
-
-    best_indices = np.argsort(similarities)[::-1][:top_k]
+    indexed_similarities = list(enumerate(similarities))
+    indexed_similarities.sort(key=lambda item: item[1], reverse=True)
 
     results = []
-
-    for index in best_indices:
-        result = dict(chunks[int(index)])
-        result["similarity"] = float(similarities[index])
-        results.append(result)
+    for idx, score in indexed_similarities[:top_k]:
+        chunk = chunks[idx]
+        results.append(
+            {
+                "source": chunk["source"],
+                "page": chunk["page"],
+                "chunk_index": chunk.get("chunk_index"),
+                "text": chunk["text"],
+                "similarity": float(score),
+            }
+        )
 
     return results
